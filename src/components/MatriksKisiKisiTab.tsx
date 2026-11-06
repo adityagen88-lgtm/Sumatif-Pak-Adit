@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { CONFIG } from '../config';
 import { Question, CognitiveLevel, Difficulty } from '../types';
 import {
   getBlueprintStatistics,
@@ -94,7 +95,7 @@ export const MatriksKisiKisiTab: React.FC<MatriksKisiKisiTabProps> = ({ question
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 text-xs font-bold border border-blue-400/30">
               <Sparkles className="w-3.5 h-3.5 text-blue-300" />
-              <span>Standar Kurikulum Merdeka • Fase C (Kelas VI)</span>
+              <span>Standar Kurikulum Merdeka • Fase B (Kelas {CONFIG.KELAS})</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
               Matriks Kisi-Kisi Penulisan Soal
@@ -153,7 +154,7 @@ export const MatriksKisiKisiTab: React.FC<MatriksKisiKisiTabProps> = ({ question
             </div>
           </div>
           <span className="text-[11px] text-slate-400 mt-3 pt-2 border-t border-slate-100 block">
-            Capaian Pembelajaran Matematika Fase C
+            Capaian Pembelajaran {CONFIG.MATA_PELAJARAN} Fase B (Kelas {CONFIG.KELAS})
           </span>
         </div>
 

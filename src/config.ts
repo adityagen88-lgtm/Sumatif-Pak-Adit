@@ -4,12 +4,13 @@
  */
 
 export const CONFIG = {
-  SEKOLAH: "SEKOLAH DASAR",
-  ALAMAT_SEKOLAH: "Jembrana",
+  SEKOLAH: "SDN 2 Loloan Timur",
+  ALAMAT_SEKOLAH: "Loloan Timur, Jembrana",
   KOTA: "Jembrana",
-  KELAS: "VI",
-  MATA_PELAJARAN: "MATEMATIKA",
-  MATERI: "TKA (Tes Kemampuan Akademik)",
+  KELAS: "IV",
+  MATA_PELAJARAN: "IPAS",
+  MATERI: "Sumatif IPAS",
+  SUB_MATERI: "Energi dan Perubahannya",
   GURU: "........................................",
   NIP_GURU: "........................................",
   KEPALA_SEKOLAH: "........................................",

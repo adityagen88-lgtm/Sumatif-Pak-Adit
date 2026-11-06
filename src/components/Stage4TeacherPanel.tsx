@@ -618,6 +618,7 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
                 className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none font-medium"
               >
                 <option value="Semua">Semua Kelas</option>
+                <option value="IV">Kelas IV</option>
                 <option value="VI">Kelas VI</option>
               </select>
             </div>
@@ -1021,7 +1022,7 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-100 gap-3">
             <div>
               <h3 className="text-base font-bold text-slate-900">
-                Struktur &amp; Bank Soal Matematika TKA ({questions.length} Butir)
+                Struktur &amp; Bank Soal {CONFIG.MATA_PELAJARAN} ({questions.length} Butir)
               </h3>
               <p className="text-xs text-slate-500">
                 18 Soal Pilihan Ganda, 3 Soal Pilihan Ganda Kompleks, 9 Soal PGK Kategori

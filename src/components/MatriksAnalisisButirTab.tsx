@@ -339,7 +339,7 @@ export const MatriksAnalisisButirTab: React.FC<MatriksAnalisisButirTabProps> = (
                         setHoveredQuestion({
                           qNum,
                           topic: q.topic,
-                          elemen: itemStats[idx]?.elemen || 'Matematika',
+                          elemen: itemStats[idx]?.elemen || CONFIG.MATA_PELAJARAN,
                           kunci: itemStats[idx]?.kunciJawaban || '-',
                         })
                       }

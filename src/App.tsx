@@ -1,7 +1,7 @@
 /**
  * Aplikasi Website Tes Sumatif
- * SEKOLAH DASAR - JEMBRANA - KELAS VI
- * Mata Pelajaran: MATEMATIKA (TKA)
+ * SDN 2 LOLOAN TIMUR - KELAS IV
+ * Mata Pelajaran: IPAS (Energi dan Perubahannya)
  */
 
 import React, { useState, useEffect } from 'react';
@@ -15,9 +15,9 @@ import { Stage3Result } from './components/Stage3Result';
 import { Stage4TeacherPanel } from './components/Stage4TeacherPanel';
 import { TeacherAuthModal } from './components/TeacherAuthModal';
 
-const STORAGE_QUESTIONS_KEY = 'sd3_loloan_timur_questions_v2';
-const STORAGE_ALLOW_REVIEW_KEY = 'sd3_loloan_timur_allow_review';
-const STORAGE_STRICT_SECURITY_KEY = 'sd3_strict_exam_mode';
+const STORAGE_QUESTIONS_KEY = 'sdn2_loloan_timur_ipas_k4_v1';
+const STORAGE_ALLOW_REVIEW_KEY = 'sdn2_loloan_timur_allow_review';
+const STORAGE_STRICT_SECURITY_KEY = 'sdn2_strict_exam_mode';
 
 export default function App() {
   // Tahap aktif: 1 (Identitas), 2 (Soal Tes), 3 (Hasil Tes), 4 (Panel Guru)

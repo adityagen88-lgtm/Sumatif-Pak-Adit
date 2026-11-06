@@ -2,7 +2,8 @@ import { Question, QuestionBlueprint, CognitiveLevel, Difficulty } from '../type
 
 /**
  * Data Acuan Matriks Kisi-Kisi Penulisan Soal Tes Sumatif
- * Kurikulum Merdeka - Fase C (Kelas VI) Mata Pelajaran Matematika
+ * Kurikulum Merdeka - Fase B (Kelas IV) Mata Pelajaran IPAS
+ * Lingkup Materi: Energi dan Perubahannya
  */
 
 export interface BlueprintDefinition {
@@ -13,330 +14,296 @@ export interface BlueprintDefinition {
   bobotSkor: number;
 }
 
-// Peta acuan default 30 butir soal Kurikulum Merdeka
+// Peta acuan default 30 butir soal Kurikulum Merdeka IPAS Kelas 4
 export const DEFAULT_BLUEPRINT_MAP: Record<number, BlueprintDefinition> = {
   1: {
-    elemen: 'Bilangan',
+    elemen: 'Bentuk Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah operasi hitung bilangan bulat negatif dan positif dalam kehidupan sehari-hari.',
+      'Peserta didik dapat mengidentifikasi sumber energi utama dan terbesar bagi seluruh kehidupan di bumi.',
     indikatorSoal:
-      'Disajikan narasi perubahan suhu es yang dipanaskan secara berkala, peserta didik dapat menentukan suhu akhir es setelah waktu pemanasan tertentu.',
+      'Disajikan narasi tentang sumber energi alam, peserta didik dapat menentukan sumber energi utama bagi bumi.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   2: {
-    elemen: 'Bilangan',
+    elemen: 'Bentuk Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah penalaran yang melibatkan operasi hitung campuran pecahan dan bilangan cacah.',
+      'Peserta didik dapat memahami konsep timbulnya energi bunyi dari benda atau materi yang bergetar.',
     indikatorSoal:
-      'Disajikan cerita kontekstual panen beras (kuintal) yang dijual dan dibagi rata ke beberapa tetangga, peserta didik dapat menghitung berat beras yang diterima tiap orang dalam satuan kilogram.',
-    levelKognitif: 'L2',
-    bobotSkor: 1,
-  },
-  3: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan konsep Faktor Persekutuan Terbesar (FPB) untuk menyelesaikan permasalahan pembagian barang secara merata.',
-    indikatorSoal:
-      'Disajikan data tiga jenis perlengkapan belajar yang akan dibagikan sama banyak kepada siswa berprestasi, peserta didik dapat menentukan jumlah siswa terbanyak penerima dan jumlah pensil yang didapat masing-masing siswa.',
-    levelKognitif: 'L2',
-    bobotSkor: 1,
-  },
-  4: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat menerapkan konsep Kelipatan Persekutuan Terkecil (KPK) dalam menentukan jadwal atau waktu kejadian bersamaan.',
-    indikatorSoal:
-      'Disajikan interval waktu berbunyinya tiga lonceng pos kamling pada pukul tertentu, peserta didik dapat menentukan waktu saat ketiga lonceng berbunyi bersamaan kembali untuk kedua kalinya.',
+      'Disajikan fenomena alat musik atau lonceng yang bersuara, peserta didik dapat mengidentifikasi penyebab timbulnya energi bunyi.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
-  5: {
-    elemen: 'Aljabar',
+  3: {
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat memahami konsep rasio, perbandingan, dan skala pada peta atau denah.',
+      'Peserta didik dapat menganalisis perubahan bentuk energi listrik menjadi energi panas (kalor) pada peralatan rumah tangga.',
     indikatorSoal:
-      'Disajikan jarak dua kota pada peta dan skala tertentu, peserta didik dapat menghitung jarak sebenarnya antara kedua kota tersebut dalam satuan kilometer.',
+      'Disajikan stimulus penggunaan setrika listrik untuk merapikan pakaian kusut, peserta didik dapat menentukan transformasi energi yang terjadi.',
+    levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  4: {
+    elemen: 'Transformasi Energi',
+    tujuanPembelajaran:
+      'Peserta didik dapat mengklasifikasikan peralatan elektronik yang memanfaatkan perubahan energi listrik menjadi energi gerak.',
+    indikatorSoal:
+      'Disajikan daftar empat macam peralatan rumah tangga, peserta didik dapat memilih peralatan yang mengubah energi listrik menjadi gerak secara tepat.',
+    levelKognitif: 'L2',
+    bobotSkor: 1,
+  },
+  5: {
+    elemen: 'Bentuk Energi',
+    tujuanPembelajaran:
+      'Peserta didik dapat mengidentifikasi bentuk energi kimia yang tersimpan di dalam makanan bagi kebutuhan tenaga tubuh makhluk hidup.',
+    indikatorSoal:
+      'Disajikan narasi tentang sarapan pagi untuk beraktivitas, peserta didik dapat menyebutkan bentuk energi yang terkandung pada makanan.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   6: {
-    elemen: 'Aljabar',
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah proporsi dan perbandingan senilai yang berkaitan dengan selisih dan jumlah nilai.',
+      'Peserta didik dapat merunut alur tahapan perubahan energi pada lampu senter yang menggunakan batu baterai.',
     indikatorSoal:
-      'Disajikan perbandingan umur dua orang dan selisih umur mereka, peserta didik dapat menghitung jumlah umur kedua orang tersebut seluruhnya.',
+      'Disajikan ilustrasi lampu senter baterai yang dinyalakan di malam hari, peserta didik dapat menentukan urutan transformasi energinya secara urut.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   7: {
-    elemen: 'Aljabar',
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan gerak lurus beraturan (kecepatan rata-rata, jarak, dan waktu) untuk kasus berpapasan.',
+      'Peserta didik dapat mengidentifikasi perubahan energi cahaya matahari menjadi energi kimia pada proses fotosintesis tumbuhan hijau.',
     indikatorSoal:
-      'Disajikan jarak dua kota, waktu keberangkatan yang sama, dan kecepatan dua kendaraan yang berpapasan, peserta didik dapat menganalisis dan menentukan pukul berapa kedua kendaraan saling berpapasan.',
-    levelKognitif: 'L3',
+      'Disajikan proses pembuatan makanan oleh tumbuhan hijau dengan bantuan sinar matahari, peserta didik dapat menentukan perubahan energinya.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   8: {
-    elemen: 'Pengukuran',
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah yang melibatkan hubungan antara volume bangun ruang, debit aliran zat cair, dan waktu pengisian.',
+      'Peserta didik dapat menganalisis peristiwa perubahan energi gerak (kinetik) menjadi energi panas akibat adanya gaya gesek.',
     indikatorSoal:
-      'Disajikan ukuran bak penampungan air berbentuk balok dan debit kran air pengisi, peserta didik dapat menghitung waktu yang dibutuhkan untuk mengisi bak hingga penuh.',
+      'Disajikan aktivitas menggosokkan kedua telapak tangan saat kedinginan di pegunungan, peserta didik dapat menjelaskan perubahan energi yang terjadi.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   9: {
-    elemen: 'Geometri',
+    elemen: 'Bentuk Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung keliling lingkaran dan mengaplikasikannya dalam pemecahan masalah lingkungan sekitar.',
+      'Peserta didik dapat memahami konsep energi potensial gravitasi pada benda berdasarkan posisi ketinggiannya dari permukaan tanah.',
     indikatorSoal:
-      'Disajikan diameter sebuah taman berbentuk lingkaran yang akan dipasangi lampu penerangan dengan jarak tertentu, peserta didik dapat menentukan jumlah lampu yang dibutuhkan.',
-    levelKognitif: 'L1',
-    bobotSkor: 1,
-  },
-  10: {
-    elemen: 'Geometri',
-    tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas gabungan bangun datar (persegi panjang dan lingkaran).',
-    indikatorSoal:
-      'Disajikan gambar bangun datar gabungan antara persegi panjang dan setengah lingkaran berimpit, peserta didik dapat menghitung luas gabungan bangun tersebut.',
+      'Disajikan beberapa contoh benda di sekitar lingkungan, peserta didik dapat menentukan benda yang menyimpan energi potensial gravitasi.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  11: {
-    elemen: 'Pengukuran',
+  10: {
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis dan menghitung volume bangun ruang tabung serta konversi volume ke satuan liter.',
+      'Peserta didik dapat menganalisis konversi energi potensial gravitasi menjadi energi kinetik pada gerak jatuh bebas suatu benda.',
     indikatorSoal:
-      'Disajikan dimensi drum penampung minyak berbentuk tabung yang telah terisi sebagian (pecahan), peserta didik dapat menganalisis sisa volume minyak yang dibutuhkan hingga penuh dalam satuan liter.',
+      'Disajikan peristiwa bola basket yang dijatuhkan dari lantai dua ke lapangan, peserta didik dapat menganalisis perubahan energi potensial dan kinetik bola.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
-  12: {
-    elemen: 'Geometri',
+  11: {
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas permukaan bangun ruang kubus dalam konteks pemecahan masalah sehari-hari.',
+      'Peserta didik dapat mengidentifikasi perubahan energi gerak menjadi energi bunyi pada instrumen musik tradisional.',
     indikatorSoal:
-      'Disajikan ukuran rusuk sebuah kotak kado berbentuk kubus, peserta didik dapat menentukan luas minimal kertas kado yang dibutuhkan untuk menutup seluruh permukaannya.',
+      'Disajikan permainan alat musik angklung yang digoyangkan, peserta didik dapat menentukan perubahan bentuk energinya.',
     levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  12: {
+    elemen: 'Energi Terbarukan dan Alternatif',
+    tujuanPembelajaran:
+      'Peserta didik dapat menjelaskan fungsi lempeng panel surya dalam mengonversi energi cahaya matahari menjadi energi listrik.',
+    indikatorSoal:
+      'Disajikan penerapan teknologi panel surya di atap gedung sekolah, peserta didik dapat menentukan fungsi utama konversi energinya.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   13: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Energi Terbarukan dan Alternatif',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan nilai rata-rata (mean) dari sekumpulan data tunggal.',
+      'Peserta didik dapat mengidentifikasi pemanfaatan energi alternatif angin dalam teknologi modern pembangkit listrik (PLTB).',
     indikatorSoal:
-      'Disajikan sekumpulan data perolehan nilai ulangan harian siswa, peserta didik dapat menghitung nilai rata-rata (mean) dari data tersebut.',
-    levelKognitif: 'L1',
+      'Disajikan stimulus pemanfaatan tiupan angin oleh manusia, peserta didik dapat menentukan peran angin pada kincir turbin PLTB.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   14: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Energi Terbarukan dan Alternatif',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis data tunggal untuk menentukan nilai median (nilai tengah) dan modus.',
+      'Peserta didik dapat memahami pengolahan limbah kotoran ternak menjadi energi alternatif biogas untuk keperluan rumah tangga.',
     indikatorSoal:
-      'Disajikan data berat badan sejumlah siswa peserta cerdas cermat yang belum berurutan, peserta didik dapat menentukan nilai median dan modus secara tepat.',
+      'Disajikan cerita peternakan sapi yang mengolah kotoran hewan di tangki biodigester, peserta didik dapat mengidentifikasi nama energi alternatif tersebut.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   15: {
-    elemen: 'Aljabar',
+    elemen: 'Energi Terbarukan dan Alternatif',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah aritmatika sosial yang berkaitan dengan persentase diskon (potongan harga).',
+      'Peserta didik dapat menganalisis rangkaian transformasi energi pada Pembangkit Listrik Tenaga Air (PLTA).',
     indikatorSoal:
-      'Disajikan harga barang sebelum diskon dan persentase potongan harga belanja pendidikan, peserta didik dapat menghitung jumlah uang yang harus dibayar oleh pembeli.',
-    levelKognitif: 'L1',
+      'Disajikan alur aliran air waduk yang memutar turbin dan generator listrik, peserta didik dapat merunut rangkaian urutan perubahan energinya.',
+    levelKognitif: 'L3',
     bobotSkor: 1,
   },
   16: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Energi Terbarukan dan Alternatif',
     tujuanPembelajaran:
-      'Peserta didik dapat menyajikan dan menafsirkan data dalam bentuk diagram lingkaran.',
+      'Peserta didik dapat mengklasifikasikan sumber-sumber energi terbarukan yang ramah lingkungan dan tidak akan habis di alam.',
     indikatorSoal:
-      'Disajikan diagram lingkaran persentase pilihan kegiatan ekstrakurikuler beserta jumlah total siswa, peserta didik dapat menghitung banyak siswa yang memilih ekstrakurikuler tertentu.',
+      'Disajikan lima macam sumber energi alam, peserta didik dapat memilih kelompok sumber energi yang tergolong terbarukan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   17: {
-    elemen: 'Bilangan',
+    elemen: 'Penghematan Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan akar pangkat tiga dari bilangan kubik yang berkaitan dengan volume kubus.',
+      'Peserta didik dapat menerapkan perilaku hemat energi listrik dalam kehidupan sehari-hari di lingkungan sekolah.',
     indikatorSoal:
-      'Disajikan volume bak penampungan air berbentuk kubus, peserta didik dapat menentukan panjang rusuk bagian dalam bak tersebut.',
-    levelKognitif: 'L2',
+      'Disajikan beberapa opsi perilaku siswa di kelas, peserta didik dapat memilih tindakan nyata yang mencerminkan sikap hemat listrik.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   18: {
-    elemen: 'Pengukuran',
+    elemen: 'Penghematan Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat mengonversi satuan kecepatan dari km/menit ke meter per detik (m/s).',
+      'Peserta didik dapat mengevaluasi dampak negatif penggunaan bahan bakar fosil bagi lingkungan dan perlunya peralihan ke energi alternatif.',
     indikatorSoal:
-      'Disajikan jarak tempuh dan waktu seorang pelari maraton cilik, peserta didik dapat menghitung dan mengonversi kecepatan rata-rata ke satuan meter/detik.',
-    levelKognitif: 'L2',
+      'Disajikan konteks konsumsi minyak bumi dan batubara pada kendaraan, peserta didik dapat menjelaskan alasan pentingnya menghemat bahan bakar fosil.',
+    levelKognitif: 'L3',
     bobotSkor: 1,
   },
   19: {
-    elemen: 'Geometri',
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat mengidentifikasi dan membedakan sifat-sifat bangun datar layang-layang melalui pilihan berganda kompleks.',
+      'Peserta didik dapat menganalisis berbagai jenis peralatan rumah tangga yang mengubah energi listrik menjadi energi panas (kalor).',
     indikatorSoal:
-      'Disajikan tiga deskripsi sifat geometris bangun datar layang-layang, peserta didik dapat memilih semua pernyataan yang benar (lebih dari satu jawaban benar).',
+      'Disajikan tiga pilihan peralatan rumah tangga, peserta didik dapat memilih semua peralatan yang menghasilkan energi panas dengan tepat.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   20: {
-    elemen: 'Geometri',
+    elemen: 'Bentuk Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis luas, keliling, dan estimasi nilai ekonomis lahan kebun berbentuk bangun datar.',
+      'Peserta didik dapat menganalisis prinsip kerja energi potensial pegas (elastis) dan kinetik pada busur panah.',
     indikatorSoal:
-      'Disajikan ukuran kebun berbentuk persegi panjang dan harga jual per meter persegi, peserta didik dapat mengevaluasi dan memilih semua pernyataan yang bernilai benar.',
+      'Disajikan narasi olahraga panahan dengan tali busur yang ditarik, peserta didik dapat menentukan kebenaran konsep energi pegas dan gerak anak panah.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
   21: {
-    elemen: 'Bilangan',
+    elemen: 'Energi Terbarukan dan Alternatif',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan operasi hitung campuran bilangan desimal dan satuan berat dalam belanja sehari-hari.',
+      'Peserta didik dapat mengevaluasi berbagai keunggulan pemanfaatan sumber energi alternatif terbarukan bagi kelestarian bumi.',
     indikatorSoal:
-      'Disajikan data belanja kebutuhan pokok beras dan gula pasir, peserta didik dapat memverifikasi kebenaran hitungan berat tiap jenis barang dan total berat belanjaan.',
+      'Disajikan tiga opsi pernyataan mengenai energi terbarukan, peserta didik dapat memilih semua keunggulan sumber energi alternatif yang benar.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   22: {
-    elemen: 'Aljabar',
+    elemen: 'Bentuk Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis konsep aritmatika sosial mengenai bruto, neto, tara, modal, harga jual, dan keuntungan.',
+      'Peserta didik dapat menilai kebenaran pernyataan mengenai karakteristik bentuk-bentuk energi (bunyi, kimia, panas) di sekitar kita.',
     indikatorSoal:
-      'Disajikan narasi pembelian buah dalam keranjang berkategori bruto dan tara, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait neto, modal, dan laba.',
-    levelKognitif: 'L3',
+      'Disajikan tiga pernyataan mengenai getaran bunyi, makanan, dan api unggun, peserta didik dapat menentukan kategori Benar atau Salah tiap pernyataan.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   23: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis tabel distribusi frekuensi data tunggal dan menghubungkannya dengan kriteria ketercapaian (KKTP).',
+      'Peserta didik dapat mengevaluasi fungsi dan prinsip transformasi energi pada televisi, mesin cuci, dan pengering rambut.',
     indikatorSoal:
-      'Disajikan data frekuensi nilai ulangan dan batas KKTP sekolah, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait modus, jumlah siswa tuntas, dan persentase remedial.',
+      'Disajikan tiga pernyataan perubahan energi pada alat elektronik rumah tangga, peserta didik dapat menentukan status Benar atau Salah tiap pernyataan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   24: {
-    elemen: 'Pengukuran',
+    elemen: 'Bentuk Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis volume balok dan kapasitas penampungan air dalam satuan liter.',
+      'Peserta didik dapat menganalisis konsep energi kinetik pada benda yang bergerak dan mengalir.',
     indikatorSoal:
-      'Disajikan dimensi bak penampungan air balok dan kondisi keterisian 3/4 kapasitas, peserta didik dapat menentukan kebenaran (Benar/Salah) untuk volume penuh, volume isi, dan volume air yang perlu ditambahkan.',
+      'Disajikan tiga pernyataan tentang energi kinetik benda diam, laju sepeda, dan aliran air sungai, peserta didik dapat menentukan Benar atau Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   25: {
-    elemen: 'Geometri',
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan rumus keliling dan luas lingkaran pada objek kontekstual meja hias bundar.',
+      'Peserta didik dapat memahami dan mengevaluasi penerapan prinsip Hukum Kekekalan Energi dalam kehidupan.',
     indikatorSoal:
-      'Disajikan diameter meja bundar, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) untuk panjang jari-jari, panjang renda hias keliling, dan luas permukaan kaca penutup.',
-    levelKognitif: 'L2',
+      'Disajikan tiga pernyataan tentang hukum kekekalan energi dan perubahan energi bahan bakar, peserta didik dapat menentukan Benar atau Salah.',
+    levelKognitif: 'L3',
     bobotSkor: 1,
   },
   26: {
-    elemen: 'Aljabar',
+    elemen: 'Bentuk Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis skala denah untuk menentukan ukuran panjang, lebar, dan luas sebenarnya.',
+      'Peserta didik dapat menganalisis peranan pancaran energi panas dan cahaya matahari bagi manusia dan makhluk hidup lainnya.',
     indikatorSoal:
-      'Disajikan denah lapangan upacara sekolah dengan skala 1 : 400, peserta didik dapat menilai kebenaran (Benar/Salah) dari pernyataan panjang sebenarnya, lebar sebenarnya, dan luas sebenarnya.',
+      'Disajikan tiga pernyataan manfaat matahari (penjemuran hasil laut, vitamin D, fotosintesis), peserta didik dapat menentukan Benar atau Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   27: {
-    elemen: 'Pengukuran',
+    elemen: 'Energi Terbarukan dan Alternatif',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan jarak, waktu tempuh total, waktu istirahat, dan kecepatan gerak murni bus pariwisata.',
+      'Peserta didik dapat membandingkan karakteristik sumber energi fosil tak terbarukan dengan sumber energi alternatif terbarukan.',
     indikatorSoal:
-      'Disajikan jadwal keberangkatan bus karya wisata, waktu tiba, jarak tempuh, dan durasi istirahat, peserta didik dapat memverifikasi nilai kebenaran (Benar/Salah) pada total waktu, waktu gerak murni, dan kecepatan rata-rata saat melaju.',
+      'Disajikan tiga pernyataan pembentukan minyak bumi, batubara, dan geotermal, peserta didik dapat menentukan status Benar atau Salah.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
   28: {
-    elemen: 'Bilangan',
+    elemen: 'Penghematan Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan operasi persentase dan pecahan terhadap kuantitas barang persediaan awal.',
+      'Peserta didik dapat mengevaluasi tindakan nyata dalam menerapkan kebiasaan hemat energi listrik sehari-hari.',
     indikatorSoal:
-      'Disajikan persediaan awal buku tulis di koperasi dan data penjualan hari Senin (persen) dan Selasa (pecahan), peserta didik dapat menentukan kebenaran (Benar/Salah) dari 3 pernyataan penjualan dan sisa stok.',
+      'Disajikan tiga pernyataan tindakan pemakaian listrik di rumah, peserta didik dapat menentukan status Benar atau Salah tiap tindakan.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   29: {
-    elemen: 'Bilangan',
+    elemen: 'Transformasi Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan FPB dalam menentukan paket hadiah dan rincian isi barang per regu penerima.',
+      'Peserta didik dapat menganalisis hubungan timbal balik energi potensial gravitasi dan energi kinetik pada ayunan anak.',
     indikatorSoal:
-      'Disajikan jumlah tiga perlengkapan hadiah lomba kebersihan kelas, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) nilai FPB, banyak regu terbanyak penerima, dan komposisi isi barang per regu.',
+      'Disajikan tiga pernyataan posisi lintasan ayunan dan besaran energi potensial serta kinetiknya, peserta didik dapat menentukan Benar atau Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   30: {
-    elemen: 'Geometri',
+    elemen: 'Penghematan Energi',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis koordinat Kartesius 4 titik untuk mengidentifikasi bentuk bangun datar, keliling, dan luas.',
+      'Peserta didik dapat mengevaluasi efisiensi energi pada inovasi teknologi ramah lingkungan (lampu LED, sepeda, pendingin ruangan).',
     indikatorSoal:
-      'Disajikan 4 titik koordinat bidang Kartesius yang saling dihubungkan, peserta didik dapat menganalisis dan menentukan kebenaran (Benar/Salah) dari jenis bangun datar yang terbentuk, keliling, dan luasnya.',
+      'Disajikan tiga pernyataan efisiensi lampu LED, mobilitas sepeda, dan penggunaan AC, peserta didik dapat menentukan status Benar atau Salah.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
 };
 
 /**
- * Format label bentuk soal
- */
-export function getBentukSoalLabel(type: string): string {
-  switch (type) {
-    case 'pg':
-      return 'Pilihan Ganda (PG)';
-    case 'pgk':
-      return 'Pilihan Ganda Kompleks (PGK)';
-    case 'pgk_kategori':
-      return 'Benar / Salah (PGK Kategori)';
-    default:
-      return 'Pilihan Ganda';
-  }
-}
-
-/**
- * Format label level kognitif
- */
-export function getCognitiveLevelLabel(level: CognitiveLevel): string {
-  switch (level) {
-    case 'L1':
-      return 'L1 (Pemahaman / Mengingat)';
-    case 'L2':
-      return 'L2 (Aplikasi / Penerapan)';
-    case 'L3':
-      return 'L3 (Penalaran / Analisis HOTS)';
-    default:
-      return 'L2 (Aplikasi)';
-  }
-}
-
-/**
- * Mendapatkan format string ringkas kunci jawaban
+ * Helper untuk format representasi string kunci jawaban butir soal
  */
 export function formatCorrectAnswer(q: Question): string {
   if (q.type === 'pg') {
-    return typeof q.correctAnswer === 'string' ? q.correctAnswer : 'A';
+    return String(q.correctAnswer || '-');
   }
   if (q.type === 'pgk') {
     if (Array.isArray(q.correctAnswer)) {
-      return q.correctAnswer.join(', ');
+      return q.correctAnswer.sort().join(', ');
     }
-    return String(q.correctAnswer || 'A');
+    return String(q.correctAnswer || '-');
   }
   if (q.type === 'pgk_kategori') {
     if (q.statements && q.statements.length > 0) {
-      return q.statements
-        .map((st, i) => `${i + 1}:${st.correctAnswer ? 'B' : 'S'}`)
-        .join(', ');
+      return q.statements.map((s) => (s.correctAnswer ? 'B' : 'S')).join(' | ');
     }
     return 'B/S';
   }
@@ -362,13 +329,13 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
     q.tujuanPembelajaran ||
     (def
       ? def.tujuanPembelajaran
-      : `Peserta didik mampu menerapkan konsep materi ${q.topic} dalam menyelesaikan permasalahan matematika.`);
+      : `Peserta didik mampu memahami dan menerapkan konsep materi ${q.topic} pada mata pelajaran IPAS.`);
 
   const indikatorSoal =
     q.indikatorSoal ||
     (def
       ? def.indikatorSoal
-      : `Disajikan stimulus masalah tentang ${q.topic}, peserta didik dapat menentukan jawaban yang tepat.`);
+      : `Disajikan stimulus kontekstual tentang ${q.topic}, peserta didik dapat menganalisis dan menentukan jawaban yang tepat.`);
 
   const bobotSkor = q.bobot || (def ? def.bobotSkor : 1);
 
@@ -390,22 +357,38 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
 
 function inferElemenFromTopic(topic: string): string {
   const t = topic.toLowerCase();
-  if (t.includes('bilangan') || t.includes('pecahan') || t.includes('fpb') || t.includes('kpk') || t.includes('pangkat')) {
-    return 'Bilangan';
+  if (
+    t.includes('panas') ||
+    t.includes('listrik') ||
+    t.includes('gerak') ||
+    t.includes('fotosintesis') ||
+    t.includes('transformasi') ||
+    t.includes('kekekalan') ||
+    t.includes('perubahan')
+  ) {
+    return 'Transformasi Energi';
   }
-  if (t.includes('lingkaran') || t.includes('bangun datar') || t.includes('kubus') || t.includes('geometri') || t.includes('layang')) {
-    return 'Geometri';
+  if (
+    t.includes('alternatif') ||
+    t.includes('terbarukan') ||
+    t.includes('surya') ||
+    t.includes('angin') ||
+    t.includes('plta') ||
+    t.includes('pltb') ||
+    t.includes('biogas') ||
+    t.includes('fosil')
+  ) {
+    return 'Energi Terbarukan dan Alternatif';
   }
-  if (t.includes('debit') || t.includes('volume') || t.includes('kecepatan') || t.includes('jarak')) {
-    return 'Pengukuran';
+  if (
+    t.includes('hemat') ||
+    t.includes('penghematan') ||
+    t.includes('efisiensi') ||
+    t.includes('lingkungan')
+  ) {
+    return 'Penghematan Energi';
   }
-  if (t.includes('skala') || t.includes('perbandingan') || t.includes('diskon') || t.includes('bruto') || t.includes('aritmatika')) {
-    return 'Aljabar';
-  }
-  if (t.includes('statistika') || t.includes('diagram') || t.includes('mean') || t.includes('modus') || t.includes('median')) {
-    return 'Analisis Data dan Peluang';
-  }
-  return 'Bilangan';
+  return 'Bentuk Energi';
 }
 
 function inferLevelFromDifficulty(diff: Difficulty): CognitiveLevel {
@@ -453,7 +436,7 @@ export function getBlueprintStatistics(questions: Question[]) {
     {
       level: 'L1' as const,
       label: 'L1 (Pemahaman / C1-C2)',
-      desc: 'Mengingat & Memahami konsep dasar',
+      desc: 'Mengingat & Memahami konsep dasar energi',
       count: levelCountMap.L1,
       percentage: total > 0 ? Math.round((levelCountMap.L1 / total) * 100) : 0,
       color: 'blue',
@@ -461,7 +444,7 @@ export function getBlueprintStatistics(questions: Question[]) {
     {
       level: 'L2' as const,
       label: 'L2 (Aplikasi / C3)',
-      desc: 'Menerapkan konsep pada konteks nyata',
+      desc: 'Menerapkan konsep transformasi energi sehari-hari',
       count: levelCountMap.L2,
       percentage: total > 0 ? Math.round((levelCountMap.L2 / total) * 100) : 0,
       color: 'emerald',
@@ -469,7 +452,7 @@ export function getBlueprintStatistics(questions: Question[]) {
     {
       level: 'L3' as const,
       label: 'L3 (Penalaran / C4-C6 HOTS)',
-      desc: 'Menganalisis & memecahkan masalah kompleks',
+      desc: 'Menganalisis fenomena & efisiensi energi kompleks',
       count: levelCountMap.L3,
       percentage: total > 0 ? Math.round((levelCountMap.L3 / total) * 100) : 0,
       color: 'amber',
@@ -526,4 +509,30 @@ export function getBlueprintStatistics(questions: Question[]) {
     difficultyDistribution,
     typeDistribution,
   };
+}
+
+export function getCognitiveLevelLabel(level: CognitiveLevel): string {
+  switch (level) {
+    case 'L1':
+      return 'L1 (Pemahaman)';
+    case 'L2':
+      return 'L2 (Aplikasi)';
+    case 'L3':
+      return 'L3 (Penalaran/HOTS)';
+    default:
+      return level;
+  }
+}
+
+export function getBentukSoalLabel(type: string): string {
+  switch (type) {
+    case 'pg':
+      return 'Pilihan Ganda (PG)';
+    case 'pgk':
+      return 'Pilihan Ganda Kompleks (PGK)';
+    case 'pgk_kategori':
+      return 'PGK Kategori (Benar/Salah)';
+    default:
+      return type;
+  }
 }

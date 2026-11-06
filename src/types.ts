@@ -30,11 +30,12 @@ export interface StatementItem {
 
 export type CognitiveLevel = 'L1' | 'L2' | 'L3';
 export type KurikulumElemen =
-  | 'Bilangan'
-  | 'Aljabar'
-  | 'Pengukuran'
-  | 'Geometri'
-  | 'Analisis Data dan Peluang';
+  | 'Pemahaman IPAS'
+  | 'Keterampilan Proses'
+  | 'Bentuk Energi'
+  | 'Transformasi Energi'
+  | 'Energi Terbarukan dan Alternatif'
+  | 'Penghematan Energi';
 
 export interface Question {
   id: number;

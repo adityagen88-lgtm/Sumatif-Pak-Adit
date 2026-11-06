@@ -623,9 +623,9 @@ function doPost(e) {
     var ss = SpreadsheetApp.getActiveSpreadsheet();
     
     // 1. Tentukan Nama Tab Sheet Berdasarkan Mata Pelajaran
-    var rawSubject = contents.mataPelajaran || contents.subject || "MATEMATIKA";
+    var rawSubject = contents.mataPelajaran || contents.subject || "IPAS";
     var sheetName = String(rawSubject).trim().toUpperCase().replace(/[^A-Z0-9_]/g, "_");
-    if (!sheetName) sheetName = "MATEMATIKA";
+    if (!sheetName) sheetName = "IPAS";
     
     var sheet = ss.getSheetByName(sheetName);
     
